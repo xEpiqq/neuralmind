@@ -1,0 +1,104 @@
+.main {
+  background: linear-gradient(180deg, #BAFFF3 0%, #80FFEA 100%);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.main_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_content {
+  display: flex;
+  width: 50%;
+  height: 40rem;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 13rem;
+  gap: 2.5rem;
+  .header_text {
+    top: 10rem;
+    left: 13rem;
+    font-family: 'Nerko One', cursive;
+    font-size: 1.75rem;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+  }
+  .chalkboard {
+    display: flex;
+    background: #FFEEB9;
+    width: 35rem;
+    height: 20rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: .3rem;
+    .list_item {
+      font-size: 2.5rem;
+      font-family: 'Overpass Mono', monospace;
+      color: #494949;
+      font-weight: 300;
+    }
+  }
+
+}
+
+.right_content {
+  width: 50%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone_container{
+  margin-top: 3rem;
+  margin-right: 5rem;
+  width: 26rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  img {
+    width: 14rem;
+    height: 25.284rem;
+  }
+  .app_store {
+    position: absolute;
+    top: 48%;
+    left: 0%;
+    z-index: 2;
+    width: 12.820rem;
+    height: 4rem;
+    transition: .05s;
+    transform: scale(.9);
+    opacity: .9;
+    &:hover {
+      transform: scale(1);
+      cursor: pointer;
+      opacity: 1;
+  }
+  }
+  .play_store {
+    position: absolute;
+    z-index: 3;
+    width: 12.820rem;
+    height: 4rem;
+    bottom: 10%;
+    right: 0%;
+    transition: .05s;
+    transform: scale(.9);
+    opacity: .9;
+    &:hover {
+      transform: scale(1);
+      cursor: pointer;
+      opacity: 1;
+  }
+  }
+}

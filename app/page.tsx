@@ -1,91 +1,35 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+'use client'
+import s from './page.module.scss'
+import React from 'react'
+import Navbar from './Navbar'
+import { Typewriter } from 'react-simple-typewriter'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+function Page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={s.main}>
+      <Navbar />
+      <div className={s.main_content}>
+        <div className={s.left_content}>
+          <h1 className={s.header_text}>CHAT WITH THE WORLD'S MOST POWERFUL <br/>LANGUAGE AI - NEURALMIND PRO</h1>
+          <div className={s.chalkboard}>
+            <span className={s.list_item}><Typewriter words={['Brainstorm ']} loop={1} /></span>
+            <span className={s.list_item}><Typewriter words={['', 'Get feedback']} loop={1}/></span>
+            <span className={s.list_item}><Typewriter words={[' ',' ', 'Write short stories']} loop={1}/></span>
+            <span className={s.list_item}><Typewriter words={[' ',' ',' ', 'Learn new subjects']} loop={1}/></span>
+            <span className={s.list_item}><Typewriter words={[' ',' ',' ',' ', 'Generate code']} loop={1}/></span>
+            <span className={s.list_item}><Typewriter words={[' ',' ',' ',' ',' ', 'Enhance workflow']} loop={1}/></span>
+          </div>
+        </div>
+        <div className={s.right_content}>
+          <div className={s.iphone_container}>
+            <img className={s.app_store} src='/app_store.png'/>
+            <img className={s.play_store} src='/play_store.png'/>
+            <img src='/neuralmind_app.png' className={s.iphone_frame} draggable="false"/>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
+
+export default Page
