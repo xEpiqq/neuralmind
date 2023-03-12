@@ -10,14 +10,14 @@ function Page() {
       <Navbar />
       <div className={s.main_content}>
         <div className={s.left_content}>
-          <h1 className={s.header_text}>CHAT WITH THE WORLD'S MOST POWERFUL <br/>LANGUAGE AI - NEURALMIND PRO</h1>
+          <h1 className={s.header_text}>CHAT WITH THE WORLD&apos;S MOST POWERFUL <br/>LANGUAGE AI - NEURALMIND PRO</h1>
           <div className={s.chalkboard}>
-            {/* <span className={s.list_item}><Typewriter words={['Brainstorm ']} loop={1} /></span>
+            <span className={s.list_item}><Typewriter words={['Brainstorm ']} loop={1} /></span>
             <span className={s.list_item}><Typewriter words={['', 'Get feedback']} loop={1}/></span>
             <span className={s.list_item}><Typewriter words={[' ',' ', 'Write short stories']} loop={1}/></span>
             <span className={s.list_item}><Typewriter words={[' ',' ',' ', 'Learn new subjects']} loop={1}/></span>
             <span className={s.list_item}><Typewriter words={[' ',' ',' ',' ', 'Generate code']} loop={1}/></span>
-            <span className={s.list_item}><Typewriter words={[' ',' ',' ',' ',' ', 'Enhance workflow']} loop={1}/></span> */}
+            <span className={s.list_item}><Typewriter words={[' ',' ',' ',' ',' ', 'Enhance workflow']} loop={1}/></span>
           </div>
         </div>
         <div className={s.right_content}>
