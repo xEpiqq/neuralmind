@@ -13,7 +13,7 @@ function Page() {
           <h1 className={s.header_text}>CHAT WITH THE WORLD&apos;S MOST POWERFUL <br/>LANGUAGE AI - NEURALMIND PRO</h1>
           <div className={s.chalkboard}>
             <span className={s.list_item}><Typewriter words={['Brainstorm ']} loop={1} /></span>
-            <span className={s.list_item}><Typewriter words={['', 'Get feedback']} loop={1}/></span>
+            <span className={s.list_item}><Typewriter words={[' ', 'Get feedback']} loop={1}/></span>
             <span className={s.list_item}><Typewriter words={[' ',' ', 'Write short stories']} loop={1}/></span>
             <span className={s.list_item}><Typewriter words={[' ',' ',' ', 'Learn new subjects']} loop={1}/></span>
             <span className={s.list_item}><Typewriter words={[' ',' ',' ',' ', 'Generate code']} loop={1}/></span>
